@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dave Agustin — Full Stack Developer & Creative Designer</title>
+  <meta name="description" content="Full Stack Developer & UI/UX Designer. Building high-performance web solutions, Web3 platforms, and government systems with the MERN stack.">
+  <!-- OG Meta -->
+  <meta property="og:title" content="Dave Agustin — Full Stack Developer & Creative Designer">
+  <meta property="og:description" content="Building high-performance web solutions, Web3 platforms, and government systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.davecaacoy.dev">
+  <meta property="og:image" content="https://dave-official-portfolio.vercel.app/images/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dave Agustin — Full Stack Developer & Creative Designer">
+  <meta name="twitter:description" content="Building high-performance web solutions, Web3 platforms, and government systems.">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.davecaacoy.dev">
+  <!-- Favicon (inline SVG — DA monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' rx='48' fill='%230a0a0a'/%3E%3Ctext x='128' y='170' font-family='Inter,sans-serif' font-weight='900' font-size='140' fill='%23ED462D' text-anchor='middle'%3EDA%3C/text%3E%3C/svg%3E">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ OVERLAYS ═══ -->
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="rgb-fringe" aria-hidden="true"></div>
+
+<!-- ═══ HERO — FULL RED VIEWPORT ═══ -->
+<section class="hero" id="hero">
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#" class="site-logo" aria-label="Dave Agustin — Home">Dave Agustin</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation" type="button">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="site-nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a id="nav-cta-btn" href="https://calendly.com/caacoydave/30min" target="_blank" rel="noopener noreferrer" class="btn-chamfer site-nav-cta btn-dark">Book a Meeting</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero watermark (DA initials as SVG) -->
+  <svg class="hero-watermark" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <text x="100" y="85" font-family="Inter, sans-serif" font-weight="900" font-size="100" fill="currentColor" text-anchor="middle">DA</text>
+  </svg>
+
+  <div class="hero-content">
+    <h1 style="margin-top: 2rem;">Full Stack Developer.<br>Creative Designer.</h1>
+    <p class="hero-sub">
+      Building high-performance web solutions, Web3 platforms, and government systems with a focus on aesthetics and user experience.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-chamfer btn-red" id="hero-contact-btn">Get in Touch</a>
+      <a href="#about" class="btn-chamfer btn-outline">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Ticker -->
+  <div class="hero-ticker">
+    <div class="hero-ticker-inner">
+      <span>React</span><span>&bull;</span>
+      <span>Node.js</span><span>&bull;</span>
+      <span>MongoDB</span><span>&bull;</span>
+      <span>TypeScript</span><span>&bull;</span>
+      <span>Web3</span><span>&bull;</span>
+      <span>Figma</span><span>&bull;</span>
+      <span>UI/UX Design</span><span>&bull;</span>
+      <span>Next.js</span><span>&bull;</span>
+      <span>Solana</span><span>&bull;</span>
+      <span>MERN Stack</span><span>&bull;</span>
+      <span>Vue.js</span><span>&bull;</span>
+      <span>Supabase</span><span>&bull;</span>
+      <!-- Duplicate for seamless loop -->
+      <span>React</span><span>&bull;</span>
+      <span>Node.js</span><span>&bull;</span>
+      <span>MongoDB</span><span>&bull;</span>
+      <span>TypeScript</span><span>&bull;</span>
+      <span>Web3</span><span>&bull;</span>
+      <span>Figma</span><span>&bull;</span>
+      <span>UI/UX Design</span><span>&bull;</span>
+      <span>Next.js</span><span>&bull;</span>
+      <span>Solana</span><span>&bull;</span>
+      <span>MERN Stack</span><span>&bull;</span>
+      <span>Vue.js</span><span>&bull;</span>
+      <span>Supabase</span><span>&bull;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTENT LINES ═══ -->
+<div class="content-lines"></div>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<main class="content">
+
+  <div style="padding-bottom: 4rem;"><div class="section-divider" style="position: relative; top: 4rem;"></div></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  SERVICES — WHAT I DO           ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="services-outer reveal">
+        <!-- Top: Badge + Headline -->
+        <div class="services-top">
+          <div class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM15 7h2v2h-2zM7 7h2v2H7zM7 15h2v2H7zM15 15h2v2h-2zM5 17h2v2H5zM5 5h2v2H5zM9 13h2v2H9zM13 13h2v2h-2zM13 9h2v2h-2zM9 9h2v2H9zM17 5h2v2h-2zM17 17h2v2h-2z" fill="var(--red)"/></svg>
+            What I Do
+          </div>
+          <h2 class="display services-headline">Crafting meaningful<br>digital experiences.</h2>
+        </div>
+
+        <div class="services-divider"></div>
+
+        <!-- 2x2 Card Grid -->
+        <div class="services-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card-header">
+              <span class="mono service-card-label">Full-Stack Development</span>
+              <span class="mono service-card-number">001</span>
+            </div>
+            <h3 class="display-heavy">Scalable web applications.</h3>
+            <p>Building robust applications with the MERN stack, ensuring seamless frontend experiences backed by powerful backend systems and APIs.</p>
+          </div>
+
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card-header">
+              <span class="mono service-card-label">UI/UX Design</span>
+              <span class="mono service-card-number">002</span>
+            </div>
+            <h3 class="display-heavy">Interfaces that resonate.</h3>
+            <p>Crafting intuitive, visually compelling interfaces with Figma and modern design principles, focused on user behavior and aesthetics.</p>
+          </div>
+
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card-header">
+              <span class="mono service-card-label">Web3 Integration</span>
+              <span class="mono service-card-number">003</span>
+            </div>
+            <h3 class="display-heavy">Decentralized platforms.</h3>
+            <p>Developing dApps, smart contracts, and NFT platforms — bridging traditional web with blockchain technology on Solana and Ethereum.</p>
+          </div>
+
+          <div class="service-card reveal reveal-delay-4">
+            <div class="service-card-header">
+              <span class="mono service-card-label">Brand & Strategy</span>
+              <span class="mono service-card-number">004</span>
+            </div>
+            <h3 class="display-heavy">Identities that last.</h3>
+            <p>Creating cohesive brand identities and digital strategies — from logo design to complete visual systems — that resonate with audiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  ABOUT ME                       ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-flex">
+        <!-- Headline -->
+        <div class="about-headline-wrap reveal">
+          <div class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 11h2v2h-2zM18 7h2v2h-2zM4 13h2v2H4zM10 15h2v2h-2zM8 17h2v2H8zM12 13h2v2h-2zM16 9h2v2h-2zM6 15h2v2H6z" fill="var(--red)"/></svg>
+            About Me
+          </div>
+          <h2 class="display about-title">Everything crafted.<br>Own your experience.</h2>
+          <p class="about-desc">
+            I'm Dave Agustin — a Full Stack Developer and UI/UX Designer passionate about creating visually compelling, user-friendly digital experiences. With a keen eye for aesthetics and a deep understanding of user behavior, I design and build interfaces that not only look great but also deliver real value. Awarded <strong style="color:var(--text-primary)">Best in Thesis Capstone</strong> for developing a complex web-based archiving system for a government legislative office.
+          </p>
+        </div>
+
+        <!-- Tech diagram grid -->
+        <div class="about-diagram-wrap reveal reveal-delay-2">
+          <div class="about-diagram">
+            <div class="about-diagram-cell">
+              <span class="cell-icon">⚛️</span>
+              <div class="cell-title">Frontend</div>
+              <div class="cell-sub">React · Vue · Next.js</div>
+            </div>
+            <div class="about-diagram-cell">
+              <span class="cell-icon">🔧</span>
+              <div class="cell-title">Backend</div>
+              <div class="cell-sub">Node · Express · PHP</div>
+            </div>
+            <div class="about-diagram-cell">
+              <span class="cell-icon">🗄️</span>
+              <div class="cell-title">Database</div>
+              <div class="cell-sub">MongoDB · MySQL · Supabase</div>
+            </div>
+            <div class="about-diagram-cell">
+              <span class="cell-icon">🔗</span>
+              <div class="cell-title">Web3</div>
+              <div class="cell-sub">Solana · Ethereum · NFTs</div>
+            </div>
+            <div class="about-diagram-cell">
+              <span class="cell-icon">🎨</span>
+              <div class="cell-title">Design</div>
+              <div class="cell-sub">Figma · Photoshop · Illustrator</div>
+            </div>
+            <div class="about-diagram-cell">
+              <span class="cell-icon">🚀</span>
+              <div class="cell-title">DevOps</div>
+              <div class="cell-sub">Vercel · Nginx · Ubuntu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  APPROACH (Work Offline style)  ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="approach-section">
+    <div class="approach-layout">
+      <!-- Left: visual flow diagram -->
+      <div class="approach-visual">
+        <div class="approach-flow reveal">
+          <!-- Card 1 -->
+          <div class="approach-flow-card">Requirements</div>
+          <!-- Connector -->
+          <div class="approach-connector">
+            <svg width="2" height="20" viewBox="0 0 2 20"><line x1="1" y1="0" x2="1" y2="20" stroke="var(--green)" stroke-width="1" stroke-dasharray="2 3"/></svg>
+            <div class="connector-label">Research</div>
+            <svg width="2" height="20" viewBox="0 0 2 20"><line x1="1" y1="0" x2="1" y2="20" stroke="var(--green)" stroke-width="1" stroke-dasharray="2 3"/></svg>
+          </div>
+          <!-- Card 2 (highlighted) -->
+          <div class="approach-flow-card highlight" style="text-align:center;">
+            <div class="card-title">Dave Agustin</div>
+            <div class="card-accent"><span>✓</span> Design & Development Active</div>
+          </div>
+          <!-- Connector -->
+          <div class="approach-connector">
+            <svg width="2" height="20" viewBox="0 0 2 20"><line x1="1" y1="0" x2="1" y2="20" stroke="var(--green)" stroke-width="1" stroke-dasharray="2 3"/></svg>
+            <div class="connector-label">Deploy</div>
+            <svg width="2" height="20" viewBox="0 0 2 20"><line x1="1" y1="0" x2="1" y2="20" stroke="var(--green)" stroke-width="1" stroke-dasharray="2 3"/></svg>
+          </div>
+          <!-- Card 3 -->
+          <div class="approach-flow-card">Production Ready</div>
+        </div>
+      </div>
+
+      <!-- Right: text content -->
+      <div class="approach-items">
+        <div class="badge reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM15 7h2v2h-2zM7 7h2v2H7zM7 15h2v2H7zM15 15h2v2h-2z" fill="var(--red)"/></svg>
+          My Approach
+        </div>
+        <h2 class="reveal">End-to-end.<br>From idea to deployment.</h2>
+        <div class="approach-grid">
+          <div class="approach-item reveal reveal-delay-1">
+            <h3>User-Centric</h3>
+            <p>Every project starts with understanding the user. Research-driven design that prioritizes experience over decoration.</p>
+          </div>
+          <div class="approach-item reveal reveal-delay-2">
+            <h3>Performance First</h3>
+            <p>Optimized code, fast load times, and responsive layouts. No compromises on speed or reliability.</p>
+          </div>
+          <div class="approach-item reveal reveal-delay-3">
+            <h3>Clean Architecture</h3>
+            <p>Maintainable, scalable codebases built with modern best practices and clean separation of concerns.</p>
+          </div>
+          <div class="approach-item reveal reveal-delay-4">
+            <h3>Visual Excellence</h3>
+            <p>Premium design with attention to every pixel. Interfaces that feel polished, professional, and alive.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  PROCESS (3-step tabs)          ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="badge reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM13 9h2v2h-2zM9 13h2v2H9zM15 7h2v2h-2zM7 15h2v2H7z" fill="var(--red)"/></svg>
+        My Process
+      </div>
+      <div class="process-layout reveal">
+        <!-- Left: step tabs -->
+        <div class="process-steps">
+          <button class="process-step-tab active" data-step="1">
+            <div class="process-step-number">Step 01</div>
+            <div class="process-step-title">Research & Discovery</div>
+          </button>
+          <button class="process-step-tab" data-step="2">
+            <div class="process-step-number">Step 02</div>
+            <div class="process-step-title">Design & Prototype</div>
+          </button>
+          <button class="process-step-tab" data-step="3">
+            <div class="process-step-number">Step 03</div>
+            <div class="process-step-title">Build & Deploy</div>
+          </button>
+        </div>
+
+        <!-- Right: step details -->
+        <div class="process-detail active" data-detail="1">
+          <h3>Understanding the<br>problem space.</h3>
+          <p>Every project begins with deep research — understanding the target audience, competitive landscape, and technical requirements. I map user journeys, define success metrics, and outline the architecture before writing a single line of code.</p>
+          <div class="process-detail-visual">
+            <div class="process-bar-chart">
+              <div class="process-bar">
+                <span class="process-bar-label">Research</span>
+                <div class="process-bar-track"><div class="process-bar-fill red" style="width:90%"></div></div>
+                <span class="process-bar-value">User interviews</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Analysis</span>
+                <div class="process-bar-track"><div class="process-bar-fill muted" style="width:75%"></div></div>
+                <span class="process-bar-value">Competitive audit</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Planning</span>
+                <div class="process-bar-track"><div class="process-bar-fill green" style="width:85%"></div></div>
+                <span class="process-bar-value">Architecture map</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-detail" data-detail="2">
+          <h3>Designing interfaces<br>that connect.</h3>
+          <p>With a clear strategy, I move into visual design — wireframes, component libraries, and interactive prototypes in Figma. Each screen is iterated until it achieves the right balance of beauty, usability, and brand alignment.</p>
+          <div class="process-detail-visual">
+            <div class="process-bar-chart">
+              <div class="process-bar">
+                <span class="process-bar-label">Wireframes</span>
+                <div class="process-bar-track"><div class="process-bar-fill red" style="width:95%"></div></div>
+                <span class="process-bar-value">Low → High fidelity</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Prototypes</span>
+                <div class="process-bar-track"><div class="process-bar-fill green" style="width:88%"></div></div>
+                <span class="process-bar-value">Interactive Figma</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Systems</span>
+                <div class="process-bar-track"><div class="process-bar-fill muted" style="width:80%"></div></div>
+                <span class="process-bar-value">Design tokens</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-detail" data-detail="3">
+          <h3>Engineering and<br>shipping production code.</h3>
+          <p>Clean, performant code using the MERN stack and modern tooling. CI/CD pipelines, comprehensive testing, and deployment to production. Every release is optimized for speed, accessibility, and scalability.</p>
+          <div class="process-detail-visual">
+            <div class="process-bar-chart">
+              <div class="process-bar">
+                <span class="process-bar-label">Frontend</span>
+                <div class="process-bar-track"><div class="process-bar-fill red" style="width:95%"></div></div>
+                <span class="process-bar-value">React · Next.js</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Backend</span>
+                <div class="process-bar-track"><div class="process-bar-fill green" style="width:90%"></div></div>
+                <span class="process-bar-value">Node · Express</span>
+              </div>
+              <div class="process-bar">
+                <span class="process-bar-label">Deploy</span>
+                <div class="process-bar-track"><div class="process-bar-fill muted" style="width:85%"></div></div>
+                <span class="process-bar-value">Vercel · VPS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  TECH STACK (6-card grid)       ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="techstack-section" id="skills">
+    <div class="container">
+      <div class="techstack-header reveal">
+        <div class="badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM15 7h2v2h-2zM7 7h2v2H7zM7 15h2v2H7zM15 15h2v2h-2zM17 5h2v2h-2zM17 17h2v2h-2zM5 5h2v2H5zM5 17h2v2H5z" fill="var(--red)"/></svg>
+          Capabilities
+        </div>
+        <h2>Tech Stack &<br>Design Tools.</h2>
+      </div>
+      <div class="techstack-grid">
+        <div class="techstack-card reveal reveal-delay-1">
+          <div class="techstack-card-index">01</div>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, interactive user interfaces with modern frameworks and pixel-perfect attention to detail.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">React</span>
+            <span class="techstack-tag">Vue.js</span>
+            <span class="techstack-tag">Next.js</span>
+            <span class="techstack-tag">TypeScript</span>
+            <span class="techstack-tag">Tailwind CSS</span>
+            <span class="techstack-tag">HTML5</span>
+            <span class="techstack-tag">CSS3</span>
+          </div>
+        </div>
+        <div class="techstack-card reveal reveal-delay-2">
+          <div class="techstack-card-index">02</div>
+          <h3>Backend & Database</h3>
+          <p>Engineering robust server architectures, RESTful APIs, and scalable database solutions for complex applications.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">Node.js</span>
+            <span class="techstack-tag">Express</span>
+            <span class="techstack-tag">MongoDB</span>
+            <span class="techstack-tag">MySQL</span>
+            <span class="techstack-tag">PHP</span>
+            <span class="techstack-tag">Supabase</span>
+          </div>
+        </div>
+        <div class="techstack-card reveal reveal-delay-3">
+          <div class="techstack-card-index">03</div>
+          <h3>Web3 & Blockchain</h3>
+          <p>Developing decentralized applications, smart contracts, and NFT platforms bridging web2 and web3.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">Web3.js</span>
+            <span class="techstack-tag">Solana</span>
+            <span class="techstack-tag">Ethereum</span>
+            <span class="techstack-tag">Smart Contracts</span>
+            <span class="techstack-tag">NFTs</span>
+          </div>
+        </div>
+        <div class="techstack-card reveal reveal-delay-1">
+          <div class="techstack-card-index">04</div>
+          <h3>UI/UX Design</h3>
+          <p>Crafting user-centered designs with comprehensive research, wireframing, prototyping, and design system creation.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">Figma</span>
+            <span class="techstack-tag">Sketch</span>
+            <span class="techstack-tag">Wireframing</span>
+            <span class="techstack-tag">Prototyping</span>
+            <span class="techstack-tag">Design Systems</span>
+          </div>
+        </div>
+        <div class="techstack-card reveal reveal-delay-2">
+          <div class="techstack-card-index">05</div>
+          <h3>Graphic Design & Art</h3>
+          <p>Creating brand identities, digital illustrations, game assets, and NFT artwork with premium visual quality.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">Photoshop</span>
+            <span class="techstack-tag">Illustrator</span>
+            <span class="techstack-tag">Logo Design</span>
+            <span class="techstack-tag">Brand Identity</span>
+            <span class="techstack-tag">NFT Art</span>
+          </div>
+        </div>
+        <div class="techstack-card reveal reveal-delay-3">
+          <div class="techstack-card-index">06</div>
+          <h3>DevOps & Tooling</h3>
+          <p>Deploying and maintaining applications with modern CI/CD pipelines, server management, and team workflows.</p>
+          <div class="techstack-tags">
+            <span class="techstack-tag">GitHub</span>
+            <span class="techstack-tag">Vercel</span>
+            <span class="techstack-tag">Nginx</span>
+            <span class="techstack-tag">Ubuntu</span>
+            <span class="techstack-tag">Postman</span>
+            <span class="techstack-tag">Jira</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  METRICS BAR                    ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="metrics-section">
+    <div class="metrics-grid reveal">
+      <div class="metric-item">
+        <div class="metric-value">6<span class="metric-accent">+</span></div>
+        <div class="metric-label">Projects<br>Delivered</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-value">#<span class="metric-accent">1</span></div>
+        <div class="metric-label">Best in<br>Thesis Capstone</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-value">12<span class="metric-accent">+</span></div>
+        <div class="metric-label">Technologies<br>Mastered</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-value">3<span class="metric-accent">+</span></div>
+        <div class="metric-label">Years of<br>Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  FEATURED PROJECT — TERMINAL    ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="terminal-section">
+    <div class="container">
+      <div class="terminal-layout reveal">
+        <!-- Left: Project info -->
+        <div class="terminal-info">
+          <div class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM13 9h2v2h-2zM15 7h2v2h-2zM9 13h2v2H9zM7 15h2v2H7z" fill="var(--red)"/></svg>
+            Featured Project
+          </div>
+          <h2>Web-based Archiving<br>System for Legislative Office</h2>
+          <p>Award-winning capstone project — a comprehensive web-based document archiving system built for a government legislative office. Handles thousands of records with advanced search, role-based access, and reporting.</p>
+          <div class="terminal-features-grid">
+            <div class="terminal-feature">
+              <div class="terminal-feature-label">Stack</div>
+              <div class="terminal-feature-value">MERN</div>
+            </div>
+            <div class="terminal-feature">
+              <div class="terminal-feature-label">Award</div>
+              <div class="terminal-feature-value">Best in Thesis</div>
+            </div>
+            <div class="terminal-feature">
+              <div class="terminal-feature-label">Type</div>
+              <div class="terminal-feature-value">Government System</div>
+            </div>
+            <div class="terminal-feature">
+              <div class="terminal-feature-label">Status</div>
+              <div class="terminal-feature-value" style="color: var(--green);">✓ Deployed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Terminal mockup -->
+        <div class="terminal-mockup">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span style="margin-left: 0.5rem;">dave@portfolio ~ /archiving-system</span>
+          </div>
+          <div class="terminal-line"><span class="cmd">$</span> <span class="bright">npm run dev</span></div>
+          <div class="terminal-line"><span class="muted">› Starting development server...</span></div>
+          <div class="terminal-line"><span class="muted">› Compiling React components...</span></div>
+          <div class="terminal-line"><span class="cmd">✓</span> <span class="bright">Server running on port 3000</span></div>
+          <div class="terminal-line">&nbsp;</div>
+          <div class="terminal-line"><span class="cmd">$</span> <span class="bright">mongo --eval "db.documents.count()"</span></div>
+          <div class="terminal-line"><span class="accent">→</span> <span class="bright">4,238 documents archived</span></div>
+          <div class="terminal-line">&nbsp;</div>
+          <div class="terminal-line"><span class="cmd">$</span> <span class="bright">node scripts/generate-report.js</span></div>
+          <div class="terminal-line"><span class="muted">› Generating annual legislative report...</span></div>
+          <div class="terminal-line"><span class="cmd">✓</span> <span class="bright">Report exported: Q4_2024_report.pdf</span></div>
+          <div class="terminal-line">&nbsp;</div>
+          <div class="terminal-line"><span class="cmd">$</span> <span class="bright">git log --oneline -5</span></div>
+          <div class="terminal-line"><span class="accent">a7f3c2d</span> <span class="muted">feat: role-based access control</span></div>
+          <div class="terminal-line"><span class="accent">e1b9d4f</span> <span class="muted">feat: advanced document search</span></div>
+          <div class="terminal-line"><span class="accent">c8e2a1b</span> <span class="muted">fix: pagination performance</span></div>
+          <div class="terminal-line"><span class="accent">d4f7e3a</span> <span class="muted">feat: PDF export & reporting</span></div>
+          <div class="terminal-line"><span class="accent">b2c1f8d</span> <span class="muted">init: project scaffolding</span></div>
+          <div class="terminal-line">&nbsp;</div>
+          <div class="terminal-line"><span class="cmd">$</span> <span class="terminal-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  PROJECTS GRID                  ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div class="badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM15 7h2v2h-2zM7 7h2v2H7zM7 15h2v2H7zM15 15h2v2h-2z" fill="var(--red)"/></svg>
+          Portfolio
+        </div>
+        <h2>Systems I've Built.</h2>
+        <p>Full-stack systems and platforms engineered from concept to deployment.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/kananga%20archiving.jpg" alt="Web-based Archiving System" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Full-Stack</div>
+            <h3>Web-based Archiving System</h3>
+            <p>Award-winning capstone project for Legislative Office archiving system</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">React</span>
+              <span class="project-card-tag">Node.js</span>
+              <span class="project-card-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/pumpseeker.jpeg" alt="PumpSeeker Waitlist" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Web3</div>
+            <h3>PumpSeeker Waitlist</h3>
+            <p>High-performance waitlist landing page for Web3 platform</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">React</span>
+              <span class="project-card-tag">Web3.js</span>
+              <span class="project-card-tag">Solana</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/affinity.jpeg" alt="Affinity Web3 Platform" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Web3</div>
+            <h3>Affinity Web3 Platform</h3>
+            <p>Decentralized application with modern frontend</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">React</span>
+              <span class="project-card-tag">Web3.js</span>
+              <span class="project-card-tag">Ethereum</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/goshen.jpeg" alt="Goshen DAO Landing" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Web3 & Design</div>
+            <h3>Goshen DAO Landing</h3>
+            <p>Community-focused DAO landing page</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">React</span>
+              <span class="project-card-tag">Tailwind</span>
+              <span class="project-card-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/Ecoms.png" alt="E-Commerce Platform" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Full-Stack</div>
+            <h3>E-Commerce Platform</h3>
+            <p>Custom Shopify store with advanced features</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">Shopify</span>
+              <span class="project-card-tag">JavaScript</span>
+              <span class="project-card-tag">Liquid</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-img">
+            <img src="https://dave-official-portfolio.vercel.app/images/Systems/full-stack%20business.png" alt="Business Management System" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Full-Stack</div>
+            <h3>Business Management System</h3>
+            <p>Comprehensive MERN stack business solution</p>
+            <div class="project-card-tags">
+              <span class="project-card-tag">MongoDB</span>
+              <span class="project-card-tag">Express</span>
+              <span class="project-card-tag">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  CONTACT CTA                    ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="badge reveal" style="justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM13 9h2v2h-2zM9 13h2v2H9z" fill="var(--red)"/></svg>
+        Let's Connect
+      </div>
+      <h2 class="display reveal">Let's build something<br>exceptional together.</h2>
+      <p class="contact-sub reveal">Have a project in mind? Let's talk about how I can help bring your vision to life with clean code and premium design.</p>
+      <div class="contact-actions reveal">
+        <a href="mailto:caacoydave@gmail.com" class="btn-chamfer btn-red-solid">Send Email</a>
+        <a href="https://calendly.com/caacoydave/30min" target="_blank" rel="noopener noreferrer" class="btn-chamfer btn-dark">Book a Meeting</a>
+      </div>
+      <div class="contact-links reveal">
+        <a href="https://github.com/daveagustincaacoy" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/dave-agustin-caacoy" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://x.com/daveagustin_" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter / X
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  FAQ SECTION                    ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-header reveal">
+        <div class="badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M11 11h2v2h-2zM13 9h2v2h-2zM9 13h2v2H9z" fill="var(--red)"/></svg>
+          FAQ
+        </div>
+        <h2>Common Questions.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>
+            <span class="faq-number">01</span>
+            <span class="faq-question">What technologies do you specialize in?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">I specialize in the MERN stack (MongoDB, Express, React, Node.js) for full-stack development, along with Vue.js, Next.js, TypeScript, and Tailwind CSS. For design, I use Figma, Adobe Photoshop, and Illustrator. I also have experience with Web3 technologies including Solana and Ethereum.</div>
+        </details>
+        <details class="faq-item reveal reveal-delay-1">
+          <summary>
+            <span class="faq-number">02</span>
+            <span class="faq-question">What types of projects do you work on?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">I work on a wide range of projects — from government archiving systems and business management platforms to Web3 dApps, e-commerce stores, and brand identity design. I'm most passionate about projects that require both strong engineering and premium visual design.</div>
+        </details>
+        <details class="faq-item reveal reveal-delay-2">
+          <summary>
+            <span class="faq-number">03</span>
+            <span class="faq-question">Are you available for freelance work?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">Yes! I'm open to freelance projects, contract work, and full-time opportunities. I work with clients globally and can adapt to different time zones. Book a meeting through Calendly to discuss your project.</div>
+        </details>
+        <details class="faq-item reveal reveal-delay-3">
+          <summary>
+            <span class="faq-number">04</span>
+            <span class="faq-question">What's your design process like?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">My design process follows three phases: Research & Discovery (understanding users and business goals), Design & Prototype (wireframes → high-fidelity mockups in Figma), and Build & Deploy (clean code implementation with iterative feedback). Every step is collaborative and transparent.</div>
+        </details>
+        <details class="faq-item reveal reveal-delay-4">
+          <summary>
+            <span class="faq-number">05</span>
+            <span class="faq-question">Do you offer ongoing support after launch?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">Absolutely. I provide post-launch support including bug fixes, feature enhancements, performance optimization, and server maintenance. I believe in building long-term relationships with clients rather than one-off projects.</div>
+        </details>
+        <details class="faq-item reveal reveal-delay-5">
+          <summary>
+            <span class="faq-number">06</span>
+            <span class="faq-question">Can you handle both design and development?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">Yes — that's my core strength. I bridge the gap between design and development, ensuring pixel-perfect implementation of UI designs without the typical handoff friction. From Figma wireframes to deployed production code, I handle the entire pipeline.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ╔══════════════════════════════════╗ -->
+  <!-- ║  FINAL CTA                      ║ -->
+  <!-- ╚══════════════════════════════════╝ -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="display reveal">Ready to start<br>a project?</h2>
+      <p class="reveal">Let's create something remarkable. Get in touch and let's discuss how I can bring your vision to life.</p>
+      <div class="reveal">
+        <a href="mailto:caacoydave@gmail.com" class="btn-chamfer btn-red-solid">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">Dave Agustin</span>
+        <p>Full Stack Developer & UI/UX Designer building high-performance web solutions, Web3 platforms, and government systems.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <a href="https://github.com/daveagustincaacoy" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/dave-agustin-caacoy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/daveagustin_" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+        <a href="https://calendly.com/caacoydave/30min" target="_blank" rel="noopener noreferrer">Calendly</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Dave Agustin Caacoy. All rights reserved.</span>
+      <div class="footer-status">
+        <span class="footer-status-dot"></span>
+        Available for work
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ JS ═══ -->
+<script src="script.js"></script>
+</body>
+</html>
